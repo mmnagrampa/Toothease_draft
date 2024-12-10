@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Appointment | ToothEase</title>
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/nav-bar.css">
+        <link rel="stylesheet" href="../styles/booking.css">
+        <link rel="shortcut icon" type="x-icon" href="../img/logo.png" sizes="64x64">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="../img/logo.png" class="logo-img" alt="ToothEase Logo">
+                <a href="#" class="brand-name">ToothEase</a>
+            </div>
+            
+            <nav>
+                <a href="homepage.html">Home</a>
+                <a href="appointment.html">Appointments</a>
+                <a href="clinics.html">Clinics</a>
+                <a href="about-us.html">About Us</a>
+                <a href="booking.html" class="booknow">BOOK NOW</a>
+                <div class="separator"></div>
+                
+                <!-- Profile dropdown container -->
+                <div class="profile-container">
+                    <i class="fa-solid fa-user profile-icon"></i>
+                    <div class="profile-dropdown" id="subMenu">
+                        <h4 id="welcome-message">Welcome!</h4>
+                        <hr>
+                        <a id="editProfile" href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-user"></i>
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a id="logout" href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>  
+        <div class="section">
+            <form id="appointment-form">
+                <h1>Book an Appointment</h1>
+                <!-- Clinic Dropdown -->
+                <div class="clinicService">
+                    <h2>Select Dental Clinic & Service:</h2>
+                        <div class="clinic-deets">
+                            <div class="setClinic">
+                                <label for="clinics" required>Clinics:</label>
+                                <br>
+                                <select id="clinics">
+                                    <option value="">Select Clinic</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Service Dropdown -->
+                            <div class="setService">
+                                <label for="services" required>Services:</label>
+                                <br>
+                                <select id="services">
+                                    <option value="">Select Service</option>
+                                </select>
+                            </div>
+                    </div>
+                    <!-- Appointment Date -->
+                    <div class="dateTime">
+                        <h2>Select Date & Time:</h2>
+                        <div class="clinic-setDateTime">
+                            <div class="setDate">
+                                <label for="appointment-date" required>Date:</label>
+                                <br>
+                                <input type="text" id="appointment-date" placeholder="Select Date" />
+                            </div>
+                            
+                            
+                            <!-- Time Picker (hidden initially) -->
+                            <div class="setTime">
+                                <label for="appointment-time" required>Time:</label>
+                                <br>
+                                <select id="appointment-time">
+                                    <option id="TimeSet" value="">Select Time</option> <!-- Default option -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="submit-btn">
+                        <button type="button" value="submit" id="submit-appointment">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="popup-overlay"></div>
+            <div id="popup-box">
+                <p id="popup-message"></p>
+            </div>
+
+        <!-- FOOTER DEETS -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-logo">
+                        <img src="../img/logo.png" alt="Logo">
+                    </div>
+                    <h1>ToothEase</h1>
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="footer-credits">
+                    <p>&copy;ToothEase. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script type='module' src="../scripts/booking.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script type='module' src="../scripts/nav-auth.js"></script>
+        <script src="../scripts/nav-bar.js"></script>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us | ToothEase</title>
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/about-us.css">
+        <link rel="stylesheet" href="../styles/nav-bar.css">
+        <link rel="shortcut icon" type="x-icon" href="../img/logo.png" sizes="64x64">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="../img/logo.png" class="logo-img" alt="ToothEase Logo">
+                <a href="#" class="brand-name">ToothEase</a>
+            </div>
+            
+            <nav>
+                <a href="homepage.html">Home</a>
+                <a href="appointment.html">Appointments</a>
+                <a href="clinics.html">Clinics</a>
+                <a href="about-us.html" class="active">About Us</a>
+                <a href="booking.html" class="booknow">BOOK NOW</a>
+                <div class="separator"></div>
+                
+                <!-- Profile dropdown container -->
+                <div class="profile-container">
+                    <i class="fa-solid fa-user profile-icon"></i>
+                    <div class="profile-dropdown" id="subMenu">
+                        <h4 id="welcome-message">Welcome!</h4>
+                        <hr>
+                        <a id="editProfile" href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-user"></i>
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a id="logout" href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            
+        </header> 
+
+        <section id="WelcomeAbout" class="section">
+            <div class="content">
+                <img src="../img/about-pic.jpg" alt="">
+                <div class="about-content">
+                    <h1>ToothEase: Smiles made easy <br>with just one click!</h1>
+                    <p>ToothEase is your go-to online platform for quick and easy dental clinic appointments, <br>making it simpler than ever to care for your smile. With just a few clicks, you can book, <br>manage, and maintain your dental health effortlessly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="values" class="section">
+            <div class="values">
+                <span>Values</span>
+            </div>
+            <h1>The core values that <br>shape everything we do</h1>
+            <div class="values-content">
+                <div class="core-values">
+                    <img src="../img/shield.png">
+                    <div class="coreContent">
+                        <h1>Trust</h1>
+                        <p>We provide a reliable platform to connect you with<br> trusted dental clinics.</p>
+                    </div>
+                </div>
+                
+                <div class="core-values">
+                    <img src="../img/responsibility.png">
+                    <div class="coreContent">
+                        <h1>Responsibility</h1>
+                        <p>We ensure a seamless booking experience, tailored to <br>your needs.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="core-values">
+                    <img src="../img/heartbeat.png">
+                    <div class="coreContent">
+                        <h1>Care and Service</h1>
+                        <p>We prioritize user satisfaction with compassionate<br> support and convenience.</p>
+                    </div>
+                </div>
+                
+                <div class="core-values">
+                    <img src="../img/handshake.png">
+                    <div class="coreContent">
+                        <h1>Commitment</h1>
+                        <p>We’re dedicated to making dental care accessible and <br>stress-free for everyone.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <div id="popup-overlay"></div>
+            <div id="popup-box">
+                <p id="popup-message"></p>
+            </div>
+                    
+        <!-- FOOTER DEETS -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-logo">
+                        <img src="../img/logo.png" alt="Logo">
+                    </div>
+                    <h1>ToothEase</h1>
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="footer-credits">
+                    <p>&copy;ToothEase. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script type='module' src="../scripts/nav-auth.js"></script>
+        <script src="../scripts/nav-bar.js"></script>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #EDEDED;
+    overflow-x: hidden;
+}
+
+.flatpickr-closed-day {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+    cursor: not-allowed;
+}
+
+
+.section {
+    padding: 100px 50px;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#appointment-form {
+    max-width: 90vh;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 5px grey;
+}
+
+#appointment-form > h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background: color;
+    background-color: #0578A5;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 10px ;
+}
+
+.clinicService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 100px;
+}
+
+.clinicService h2 {
+    font-weight: 500;
+}
+
+.clinic-deets, .clinic-setDateTime {
+    display: flex;
+    gap: 125px;
+    padding: 20px 0px;
+}
+
+#clinics, #services, #appointment-date, #appointment-time {
+    width: 20vh;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border-color: #C1C1C1;
+}
+
+
+#clinics, #services, #appointment-date, #appointment-time {
+    margin-top: 15px;
+}
+
+
+.submit-btn {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.submit-btn button {
+    cursor: pointer;
+    border: 0px solid transparent;
+    padding: 10px 15px;
+    background-color: #0578A5;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.submit-btn button:hover {
+    box-shadow: 2px 2px 10px 0.1px #02658b;
+}
+
+#popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; 
+    display: none;
+}
+
+#popup-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+    width: 400px;
+    text-align: center;
+    display: none;
+}
+
+#popup-message {
+    font-size: 18px;
+    color: #333;
+}

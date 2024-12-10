@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appointment | ToothEase</title>
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/appointment.css">
+        <link rel="stylesheet" href="../styles/nav-bar.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" sizes="64x64">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="../img/logo.png" class="logo-img" alt="ToothEase Logo">
+                <a href="#" class="brand-name">ToothEase</a>
+            </div>
+            
+            <nav>
+                <a href="homepage.html">Home</a>
+                <a href="appointment.html" class="active">Appointments</a>
+                <a href="clinics.html">Clinics</a>
+                <a href="about-us.html">About Us</a>
+                <a href="booking.html" class="booknow">BOOK NOW</a>
+                <div class="separator"></div>
+                
+                <!-- Profile dropdown container -->
+                <div class="profile-container">
+                    <i class="fa-solid fa-user profile-icon"></i>
+                    <div class="profile-dropdown" id="subMenu">
+                        <h4 id="welcome-message">Welcome!</h4>
+                        <hr>
+                        <a id="editProfile" href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-user"></i>
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a id="logout" href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            
+        </header> 
+        <main>
+            <div class="appointments-container">
+                <div class="tabs">
+                    <button class="tab-button active" id="booked-tab">Booked Appointments</button>
+                    <button class="tab-button" id="archived-tab">Archived Appointments</button>
+                </div>
+                <!-- Booked Appointments Section -->
+                <div id="booked-appointments" class="tab-content">
+                    <div class="book-appointment"></div>
+                </div>
+                <!-- Archived Appointments Section -->
+                <div id="archived-appointments" class="tab-content" style="display: none;">
+                    <div class="book-appointment"></div>
+                </div>
+                <!-- No Appointments Message -->
+                <div class="no-book" style="display: none;">
+                    <span>No Booked Appointments</span>
+                    <br>
+                    <button id="bookAppoint"><a href="booking.html">Book Now</a></button>
+                </div>
+            </div>
+        </main>        
+        <div id="popup-overlay" style="display: none;"></div>
+        <div id="popup-box" style="display: none;">
+            <p id="popup-message"></p>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-logo">
+                        <img src="../img/logo.png" alt="Logo">
+                    </div>
+                    <h1>ToothEase</h1>
+                    <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="footer-credits">
+                    <p>&copy;ToothEase. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- JavaScript Files -->
+        <script type="module" src="../scripts/appointment.js"></script>
+        <script type="module" src="../scripts/nav-auth.js"></script>
+        <script src="../scripts/nav-bar.js"></script>
+    </body>
+</html>
